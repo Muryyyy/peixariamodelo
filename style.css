@@ -13,13 +13,17 @@ body {
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center;    /* Centraliza verticalmente */
-  height: 100vh;          /* Faz com que a altura ocupe toda a tela (opcional) */
+  height: 60vh;           /* Define uma altura fixa (ajustável) */
+  overflow: hidden;       /* Evita que o conteúdo excedente transborde */
 }
 
 .banner img {
-  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
-  height: auto;    /* Mantém a proporção da imagem */
+  max-width: 90%;         /* Limita a largura da imagem a 90% da tela */
+  max-height: 100%;       /* Limita a altura da imagem ao tamanho do container */
+  height: auto;           /* Mantém a proporção da imagem */
+  object-fit: contain;    /* Faz com que a imagem se ajuste sem distorcer */
 }
+
 
 
 /* TOPO */
